@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name"></string>
+
+    <string-array name="Days">
+        <item> MONDAY </item>
+        <item> TUESDAY </item>
+        <item> WEDNESDAY </item>
+        <item> THURSDAY </item>
+        <item> FRIDAY </item>
+    </string-array>
+
+    <string-array name="EditDelete">
+        <item> Delete </item>
+        <item> Edit (coming soon!) </item>
+    </string-array>
+
+
+</resources>

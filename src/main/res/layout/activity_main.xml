@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.simpleweek.davidgong.simpleweek.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/MainToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:title="Week-At-A-Glance"
+            app:titleTextColor="@color/white">
+        </android.support.v7.widget.Toolbar>
+
+        <ListView
+            android:id="@+id/listMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:scrollbars="vertical"
+            android:fastScrollEnabled="true"
+            android:layout_marginBottom="12dp"
+            android:divider="@null"
+            android:layout_below="@+id/MainToolbar"
+            android:dividerHeight="15dp"
+            app:layout_constraintTop_toBottomOf="@id/MainToolbar">
+        </ListView>
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

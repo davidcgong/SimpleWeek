@@ -1,0 +1,89 @@
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:elevation="4dp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:text="11:00 AM"
+            android:lineSpacingExtra="@dimen/cardview_compat_inset_shadow"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hyphen"
+            android:layout_marginLeft="47dp"
+            android:layout_below="@+id/startTime"
+            android:text="|"
+            android:textColor="@color/cardview_dark_background"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/endTime"
+            android:layout_below="@+id/hyphen"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:text="12:00 PM"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskName"
+            android:text="MATH 1554"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="right"
+            android:ems="6"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/taskDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/taskName"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:ems="12"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Linear Algebra @ Skiles 271, make sure to eat beforehand!"
+            android:textColor="@color/gray"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+

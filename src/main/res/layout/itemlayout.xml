@@ -1,0 +1,60 @@
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:elevation="4dp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/imageMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:text="THURSDAY"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/currentDay"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="•"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textSize="50dp"-->
+            <!--android:layout_marginLeft="10dp"/>-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/textDescription"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:text="YOU STILL GOT MORE TO DO!"-->
+            <!--android:layout_below="@+id/textMain"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:textSize="16dp"-->
+            <!--/>-->
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+
+

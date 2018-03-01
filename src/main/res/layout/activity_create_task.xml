@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.simpleweek.davidgong.simpleweek.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/TaskToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:titleTextColor="@color/white"></android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="SAVE"
+            android:id="@+id/saveButton"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/taskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TaskToolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="15"
+            android:hint="Task name (i.e. class name, workout)"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskDescription"
+            android:layout_below="@id/taskName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="15"
+            android:hint="Description (i.e. location, specifics)"
+            android:inputType="text"
+            android:lines="5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fromText"
+            android:text="FROM"
+            android:textStyle="bold"
+            android:elevation="16dp"
+            android:layout_below="@id/taskDescription"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="70dp"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fromText"
+            android:id="@+id/fromTime"
+            android:ems="4"
+            android:inputType="time"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="65dp"
+            android:hint="START"
+            android:textColor="?attr/editTextColor"
+            android:background="?attr/editTextBackground"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:clickable="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toText"
+            android:text="TO"
+            android:textStyle="bold"
+            android:elevation="16dp"
+            android:layout_below="@id/taskDescription"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="130dp"
+            android:layout_alignParentRight="true"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toTime"
+            android:ems="4"
+            android:inputType="time"
+            android:layout_below="@id/toText"
+            android:layout_marginTop="20dp"
+            android:hint="END"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:textColor="?attr/editTextColor"
+            android:background="?attr/editTextBackground"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:clickable="true"/>
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+

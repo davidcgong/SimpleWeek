@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.simpleweek.davidgong.simpleweek.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/TaskToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:titleTextColor="@color/white"></android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="SAVE EDITS"
+            android:id="@+id/saveEditButton"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="DELETE"
+            android:id="@+id/deleteButton"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/taskNameEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TaskToolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="15"
+            android:hint="Task name (i.e. class name, workout)"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskDescriptionEdit"
+            android:layout_below="@id/taskNameEdit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="15"
+            android:hint="Description (i.e. location, specifics)"
+            android:inputType="text"
+            android:lines="5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fromTextEdit"
+            android:text="FROM"
+            android:textStyle="bold"
+            android:elevation="16dp"
+            android:layout_below="@id/taskDescriptionEdit"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="70dp"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fromTextEdit"
+            android:id="@+id/fromTimeEdit"
+            android:ems="4"
+            android:inputType="time"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="65dp"
+            android:hint="START"
+            android:textColor="?attr/editTextColor"
+            android:background="?attr/editTextBackground"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:clickable="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toTextEdit"
+            android:text="TO"
+            android:textStyle="bold"
+            android:elevation="16dp"
+            android:layout_below="@id/taskDescriptionEdit"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/black"
+            android:paddingRight="130dp"
+            android:layout_alignParentRight="true"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toTimeEdit"
+            android:ems="4"
+            android:inputType="time"
+            android:layout_below="@id/toTextEdit"
+            android:layout_marginTop="20dp"
+            android:hint="END"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:textColor="?attr/editTextColor"
+            android:background="?attr/editTextBackground"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:clickable="true"/>
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+
